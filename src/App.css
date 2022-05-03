@@ -1,38 +1,118 @@
+body{
+
+    background-image:url("https://walldeco.ua/img/gallery/29/thumbs/thumb_l_nfi_01545.jpg");
+    /*background-color: #c2b6a5;*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
+    background-color: rgb(156, 156, 134);*/
+}
+
+
 .App {
   text-align: center;
+  
+}
+h1{
+  font-family: 'Merienda', cursive;
+  margin: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: aliceblue;
+  text-shadow: 4px 1px black;
+}
+.click{
+  margin-top: 10px;
+  border-radius: 55%;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  width: 240px;
+  padding: 12px 20px;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 18px;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(175, 172, 172);
+  margin-top: 12px;
+  box-shadow: inset 0px 0px 0px 2px aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.end{
+  display: flex;
+  justify-content: flex-end;
+  margin:  30px;
+  flex: 1;
+}
+.start{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  margin:  30px;
+  flex:1;
+}
+h4{
+  margin: 0;
+  font-family: 'Merienda', cursive;
+  text-shadow: 1px 1px #dad0c2;
+}
+p, ul{
+  margin: 0;
+  font-family: 'Merienda', cursive;
+}
+video{
+  width: 700px;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+  font-family: 'Carter One', cursive;
+  text-shadow: 1px 1px aliceblue;
+  font-weight: 100;
+
+}
+span{
+  font-family: 'Carter One', cursive;
+}
+.enjoy{
+  font-family: 'Merienda', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.color{
+  background-color: rgba(221, 217, 217, 0.5);
+}
+
+
+
+@media all and (max-width: 500px){
+  h1{
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+  .boss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  ul{
+    text-align: center;
+    list-style: none ;
+  }
+  p{
+    margin-left: 100px;
+  }
+  video{
+    width: 350px;
+  }
+  
 }
