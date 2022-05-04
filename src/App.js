@@ -20,14 +20,14 @@ function App() {
       const response = await fetch(`https://api.edamam.com/search?q=${wordSubmit}&app_id=${MY_ID }&app_key=${MY_KEY}`);;
       const data = await response.json();
       setRecipes(data.hits);
-      console.log(data.hits);
+      
     }
     getRecipe()
   }, [wordSubmit])
 
   const inputSearch =(e) =>{
     setSearch(e.target.value)
-    console.log(e.target.value)
+    
 }
 
 const finalSearch =(e)=>{
